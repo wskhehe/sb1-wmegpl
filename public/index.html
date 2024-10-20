@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="https://unpkg.com/magic-ui/dist/magic-ui.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="navbar-brand">我的博客</h1>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <section id="posts">
+                    <!-- 博客文章将在这里动态加载 -->
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section id="new-post" class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">创建新文章</h2>
+                        <form id="post-form">
+                            <div class="form-group">
+                                <label for="post-title">文章标题</label>
+                                <input type="text" id="post-title" class="form-control" placeholder="输入文章标题" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="post-content">文章内容</label>
+                                <textarea id="post-content" class="form-control" placeholder="输入文章内容" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">发布文章</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
